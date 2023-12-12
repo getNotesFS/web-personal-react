@@ -1,0 +1,75 @@
+/*====Section Styles */
+.HobbiesSection {
+    /* Warning de css con respecto a al ancho máximo, pero está declarada en el archivo shared.css */
+    max-width: var(--max--width);
+    width: 100%;
+    padding: 1.4em 1.4em 6.25em 1.4em;
+    align-content: start;
+    gap: 1.4em;
+}
+
+
+
+.HobbiesSection h2 {
+    text-align: left;
+    
+    font-size: var( --main-section-font-size);
+    font-weight: var( --main-section-font-weight);
+    line-height:var(--main-section-line-height);
+    margin-bottom: 0.7em;
+}
+
+ 
+.hobby-grid {
+    max-width: var(--max--width);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+}
+
+.external-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+@media (min-width: 769px) {
+    .hobby-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .hobby-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* .hobby-grid:last-of-type {
+        margin-top: 1.4em;
+
+    }
+
+    .hobby-grid:last-of-type a {
+        text-align: center;
+
+    } */
+
+
+
+ 
+
+ 
+}
+
+/* Estilos para móvil */
+@media (max-width: 480px) {
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+}

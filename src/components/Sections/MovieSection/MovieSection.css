@@ -1,0 +1,152 @@
+ /* Movies */
+ .MovieSection {
+     /* Color de texto  hereda de body, no ha falta definir nuevamente. */
+
+     background-color: #fffffffe;
+     background-blend-mode: normal;
+     background-image:
+         url(./oh_bg-min.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     place-items: center;
+     place-content: center;
+     width: 100%;
+     padding: 1.4em 10%;
+     gap: 1.4em;
+     margin: 0 auto;
+
+ }
+
+ .MovieCard {
+     border: solid 1px #f0f0f0;
+     border-radius: .3em;
+     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+     display: flex;
+     flex-direction: column;
+     
+     /* background-color: #fffffffe; */
+ }
+
+ .MovieSection h2 {
+    font-size: var( --main-section-font-size);
+    font-weight: var( --main-section-font-weight);
+    line-height:var(--main-section-line-height);
+     text-align: center;
+     width: 100%;
+     padding: 0.7em 1.4em;
+     /* Warning de css con respecto a al ancho máximo, pero está declarada en el archivo shared.css */
+     max-width: var(--max--width);
+ }
+
+
+ /* Estilos para el article */
+
+
+ .article-container {
+     display: flex;
+     flex-direction: row;
+     gap: 1.4em; 
+     padding: 2.5em;
+
+ }
+
+ .article-container img {
+     flex-basis: 20em;
+     max-width: 100%;
+     height: auto;
+     aspect-ratio: 2/3;
+     object-fit: contain;
+     border-radius: .3em;
+
+ }
+
+ .article-container hgroup {
+     flex-grow: 1;
+
+     padding-top: 0.7em;
+     text-align: left;
+ }
+
+
+
+ .MovieSection article:hover img {
+     transition: all ease-in-out .2s;
+     transform: rotate(-5deg); 
+ }
+  
+
+ .MovieSection article hgroup h3 {
+     margin: 0em;
+
+ }
+
+
+
+
+
+ /* .MovieSection article hgroup p {
+    margin-top: 0.3em;
+    margin-bottom: .3em;
+
+} */
+
+ /* Article Button style */
+ .MovieSection article hgroup p a {
+     margin-top: 1.4em;
+
+ }
+
+ .MovieSection article a {
+     justify-content: center;
+     margin: 0 auto;
+     max-width: 12.5em;
+     /* Warning de css con respecto a la variable de color, pero está declarada en earchivo shared.css */
+     border: 0.0625em solid var(--black);
+     border-radius: 0.3em;
+ }
+
+ .MovieSection article a {
+     /* Color de texto y fondo hereda de body, no ha falta definir nuevamente. */
+
+
+     font-weight: bold;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 0.3em;
+     text-shadow: none;
+     bottom: 1.5em;
+     padding: 0.7em 1.4em;
+ }
+
+ .MovieSection article a:hover {
+     /* Warning de css con respecto a la variable de color, pero está declarada en earchivo shared.css */
+     color: var(--hover-red);
+ }
+
+
+
+
+
+ /*===========Breakpoints para Tablets y Desktop */
+
+
+ @media screen and (max-width: 800px) {
+
+    .MovieSection{
+        padding: 1.4em 1.4em 6.25em 1.4em;
+    }
+      .article-container {
+         flex-direction: column;  
+      } 
+
+        .article-container img {
+             max-width: 20em;
+             justify-self: center;
+             align-self: center;
+        }
+ }

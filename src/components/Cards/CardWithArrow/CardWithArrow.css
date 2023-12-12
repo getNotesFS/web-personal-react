@@ -1,0 +1,44 @@
+.CardWithArrow {
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+}
+
+.CardWithArrow:hover {
+  transition: ease-in-out 0.2s;
+  transform: scale(1.01);
+  cursor: pointer;
+  /*degradado de este color para el hover del card: #dc28284f */ 
+
+  box-shadow: 0 1px 3px 0 rgba(246, 119, 119, 0.04), 0 1px 6px -1px rgba(254, 123, 123, 0.03), 0 2px 4px 0 rgba(241, 131, 131, 0.03);
+
+}
+
+.CardWithArrow a {
+  width: 100%;
+}
+
+.CardWithArrow img {
+  width: 100%;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0.3em;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  object-fit: cover;
+}
+
+.CardWithArrow h3 {
+  margin: 10px 0;
+
+  padding: .3em 1em;
+  margin: 0em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+}

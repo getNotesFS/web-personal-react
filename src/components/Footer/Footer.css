@@ -1,0 +1,85 @@
+/*===== Footer styles */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    align-items: center;
+    padding: 1.4em;
+    gap: 0.7em;
+}
+
+footer>nav {
+    /* Warning de css con respecto a al ancho máximo, pero está declarada en el archivo shared.css */
+    max-width: calc(var(--max--width) - 22.5em);
+    flex-grow: 1;
+    display: flex;
+    gap: 0.7em;
+    justify-content: end;
+    align-items: center;
+}
+
+footer>small {
+    max-width: 22.5em;
+    flex-grow: 1;
+}
+
+footer>nav a {
+    display: inline-flex;
+    align-items: center;
+}
+
+footer>nav a svg {
+    fill: var(--white);
+    height: 2em;
+    padding: 0.3em;
+    width: auto;
+    transition: all ease-in-out .2s;
+}
+
+footer>nav a svg:hover {
+
+    fill: var(--hover-red);
+    margin-top: -0.7em;
+    border-radius: 0.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========Breakpoints para Tablets y Desktop */
+ 
+ 
+
+@media screen and (max-width: 500px) {
+
+    footer {
+        padding-top: 0.7em;
+        text-align: center;
+    }
+
+    footer nav {
+        justify-content: center;
+    }
+}
+
+ 

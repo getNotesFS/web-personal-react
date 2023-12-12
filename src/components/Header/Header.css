@@ -1,0 +1,143 @@
+
+
+/*===== Navigation menu styles*/
+.main-header {
+    display: grid;
+    padding: 1.4em;
+    /* Warning de css con respecto a al ancho máximo, pero está declarada en el archivo shared.css */
+    max-width: var(--max--width);
+    grid-template-columns: auto 1fr auto;
+    gap: 0.7em;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-header nav {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    place-content: center;
+}
+
+
+.main-header nav a {
+    font-size: 1.2em;
+}
+
+.main-header a picture {
+    display: flex;
+    width: 100%;
+}
+.hd-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+.main-header .search-icon{ 
+    width: 2em;
+    height: 2em; 
+    cursor: pointer;
+}
+.main-header .btn-contact {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    column-gap: 0.3em;
+    padding: 0.4em;
+    
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.3em;
+
+    background-color: var(--black);
+    color: var(--white);
+    border: 0.0625em solid var(--gray);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1;
+}
+
+.main-header  .btn-contact:hover {
+    /* Color de texto se hereda de body, no hace falta definirlo nuevamente. */
+    background-color: var(--hover-red);
+    transform: translateY(-0.125em);
+}
+
+.main-header  .btn-contact:hover span {
+    /* Color de background se hereda de body, no hace falta definirlo nuevamente. */
+    color: var(--white);
+}
+
+.main-header  .btn-contact svg {
+    fill: var(--white);
+    height: 1em;
+    width: 1em;
+}
+
+
+
+
+
+/*===========Breakpoints para Tablets y Desktop */
+
+@media screen and (max-width: 800px) {
+    .main-header .logo-header img {
+        width: 3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*== Navigation menu styles */
+     .main-header nav {
+        /* Cambiar grid por flex para lograr apilar el menú de navegación
+        más específica sin medir tamaños. */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+ 
+     .main-header> .btn-contact svg {
+        display: block;
+    }
+
+     .main-header> .btn-contact span {
+        display: none;
+    }
+
+     .main-header> .btn-contact:hover span {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    /*== Navigation menu styles */
+    .main-header .btn-contact {
+        position: fixed;
+        right: 1.4em;
+        bottom: 1.4em;
+        margin-bottom: 2.5em;
+    }
+ 
+}
+
+@media screen and (max-width: 320px) {
+
+    /*== Navigation menu styles */
+    .main-header {
+        /* Cambiar el ancho de la caja a tamaño completo */
+        grid-template-columns: 1fr;
+    }
+
+    .main-header .logo-header picture {
+        justify-content: center;
+    }
+
+    .main-header nav {
+        /* Centrar navegación en este tamaño de pantalla */
+        justify-content: center;
+    }
+}

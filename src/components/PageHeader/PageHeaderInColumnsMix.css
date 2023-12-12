@@ -1,0 +1,93 @@
+/*==== Logo with description section ====*/
+.page-header-single {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: start;
+    align-items: flex-start;
+    row-gap: 1.4em;
+
+    flex-direction: column;
+
+
+    max-width: var(--max--width);
+
+}
+
+.page-g-single {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.page-header-single figure {
+    /* width: 40%; */
+    height: auto;
+    padding: 0em;
+    margin: 0em;
+    overflow: hidden;
+    border-radius: 0.3em;
+    transition: all ease-in-out .3s;
+}
+ 
+
+.page-header-single figure:hover {
+    transform: scale(1.1);
+    z-index: 3;
+    /* width: 41%; */
+}
+
+.page-header-single figure img {
+    max-height: 20em;
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+    transition: all 0.4s ease-in-out;
+    transform-origin: center center;
+    border-radius: 0.3em;
+}
+
+.page-header-single figure:hover img {
+    transform: scale(1.5);
+    transform-origin: top;
+}
+
+.page-header-single hgroup {
+    width: calc(100% - 40% - 2.5em);
+    padding: 0.7em;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .page-g-single {
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+
+    }
+
+    .page-header-single .page-cover {
+        /* Cambiar el ancho del .page-cover a 100% cuando esté en dispositivos de 768px o inferior. */
+        width: 100%;
+    }
+
+    .page-header-single figure {
+        /* Cambiar tamño  de columnas cuando sea en dispositivos móviles */
+        width: 100%;
+
+    }
+
+    .page-header-single hgroup {
+        /* Cambiar tamaño  de columnas cuando sea en dispositivos móviles */
+        width: 100%;
+    }
+
+}

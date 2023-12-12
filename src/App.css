@@ -1,0 +1,121 @@
+/*===== Colors */
+:root {
+  --black: #000000;
+  --gray: #abb8c3;
+  --white: #fff;
+  --red: #cf2e2e;
+  --hover-red: #dc2828;
+  --light-gray: #fafafa;
+  /* Tamaño máximo del ancho del sitio web en pantallas grandes. */
+  --max--width: 85.5em;
+  --main-section-font-size: clamp(1.8em, 5vw, 2.2em);
+  --main-section-font-weight: 700;
+  --main-section-line-height: 1.3em;
+  
+}
+/*===== Global styles */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0;
+
+  color: var(--black);
+  background-color: var(--white);
+}
+
+
+#root {
+  
+  width: 100%;
+  margin: 0 auto; 
+  text-align: center;
+}  
+
+
+
+ 
+a {
+
+  color: var(--black);
+  text-decoration: none;
+
+}
+
+a:hover {
+
+  color: var(--hover-red);
+
+}
+
+a:hover svg {
+
+  fill: var(--hover-red);
+}
+
+a h2,
+a h2,
+a h3,
+p a {
+  /* Warning respecto a display: en el caso del sitio web tiene un ícono dentro así que hago que sea un flex para alinearlos al medio verticalmente y darle espacio entre los elementos. */
+  display: flex;
+  align-items: center;
+  column-gap: 0.3em;
+}
+
+/* Svg style by default */
+svg:not(nav a svg, nav small svg) {
+  /* Warning de css menciona como redefinitition, pero básicamente solo se está filtrando los svg a los cuales se les da estilo inicial. */
+  width: 1em;
+  width: 1em;
+}
+
+/* Breadcrumb */
+nav small svg {
+  width: .8em;
+  height: .8em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main>section {
+  min-height: 36em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,62 @@
+
+.link-button{ 
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 1.17em;
+     
+   
+    background-color: var(--white); 
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.link-button h4{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1em;
+}
+.link-button:hover{ 
+    border-radius: 0.3em;
+    /* border: 0.0625em solid var(--black); */
+}
+
+.link-button img{
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    
+}
+ 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.with-border
+{
+    border: 0.0625em solid var(--black);
+    border-radius: .3em;
+}
+
+.with-border-radius img
+{
+    border-radius: .3em;
+}
