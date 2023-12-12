@@ -101,7 +101,7 @@ const dataPeliculas = {
   title: "Películas que recomiendo",
   content:
     "Te comparto algunas de mis películas favoritas.",
-  img_url: "/videos/top-10-películas.jpg",
+  img_url: "./videos/top-10-películas.jpg",
   arial_label: "Películas",
   video_url_pg: "https://www.youtube.com/watch?v=U1drsdHFyTU",
   galleryItems: [
