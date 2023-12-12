@@ -15,7 +15,7 @@ const Music = () => {
 
                 children={
                     <Link to="https://www.youtube.com/watch?v=U1drsdHFyTU" target="_blank">
-                        <img src="./top-10-peliiculas.jpg" alt="10 Mejores Películas 2023 (Hasta Hoy)" />
+                        <img src="./top-10-peliculas.jpg" alt="10 Mejores Películas 2023 (Hasta Hoy)" />
                     </Link>
                 }
             />
