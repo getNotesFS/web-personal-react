@@ -5,7 +5,7 @@
 
     background-color: #ffffffd4;
     background-image:
-        url(./oh__demo1__1.png);
+        url("/oh__demo1__1.png");
     background-blend-mode: hard-light;
     background-size: cover;
     background-repeat: no-repeat;

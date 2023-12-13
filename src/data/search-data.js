@@ -226,9 +226,7 @@ const dataSobreMi = {
 
 };
 
- 
-
-
+  
 
 const database = {
   hobbies: [
@@ -300,11 +298,9 @@ const database = {
   ],
 };
 
-
-
-
-
-
+  
+// Exportaciones con nombre
+export { dataFotografia, dataSenderismo, dataVideojuegos };
 export default database;
  
 

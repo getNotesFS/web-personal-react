@@ -104,10 +104,7 @@ const Search = ({ data, setSearchVisible }) => {
 
     useEffect(() => {
         if (query && data.length > 0) {
-            // Obtiene las claves del primer objeto en tus datos
-            // const searchKeys = getKeysFromData(data[0]);
-
-            // console.log(searchKeys);
+             
 
             const fuse = new Fuse(data, {
                 keys: [

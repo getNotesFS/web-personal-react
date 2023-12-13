@@ -11,7 +11,7 @@ export default function PageHeaderInColumnsMix(props) {
 
     const { title, content, arial_label, img_url, video_url_pg } = props;
 
-    console.log("props", props);
+ 
 
     return (
 

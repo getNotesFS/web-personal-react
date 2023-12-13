@@ -12,8 +12,7 @@ const PlayList = ({ tracks, setTrackIndex, setCurrentTrack, trackIndex }) => {
 
     const [selectedTrackIndex, setSelectedTrackIndex] = useState(0);
 
-    
-    console.log("tracks: ", tracks);
+     
 
     useEffect(() => {
         setTrackIndex(selectedTrackIndex);

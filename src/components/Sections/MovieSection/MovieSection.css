@@ -5,7 +5,7 @@
      background-color: #fffffffe;
      background-blend-mode: normal;
      background-image:
-         url(./oh_bg-min.png);
+         url("/oh_bg-min.png");
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
