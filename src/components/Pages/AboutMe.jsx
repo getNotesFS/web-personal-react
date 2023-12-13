@@ -7,9 +7,10 @@ import PageHeaderInColumns from "../PageHeader/PageHeaderInColumns";
 
 import "./AboutMe.css";
 
-
+import useDocumentTitle from "../Hooks/custom-hooks";
 
 const AboutMe = () => {
+    useDocumentTitle('Sobre mí - Sebastián Mármol');
     const [notification, setNotification] = useState('');
     const enviarMensaje = () => {
         // Lógica para enviar el mensaje aquí

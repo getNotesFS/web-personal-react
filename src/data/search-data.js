@@ -1,10 +1,5 @@
-import Fuse from 'fuse.js';
-
-
-
-
-
-
+ 
+ 
 const dataFotografia = {
   page_url: "/hobbies/fotografia",
   title: "Fotografía",
@@ -311,3 +306,5 @@ const database = {
 
 
 export default database;
+ 
+

@@ -41,7 +41,7 @@
 }
 
 .music-column {
-    max-width: var(--max--width);
+    max-width: calc(var(--max--width) - 20em);
     padding: 2em;
     display: flex;
     flex-direction: row;

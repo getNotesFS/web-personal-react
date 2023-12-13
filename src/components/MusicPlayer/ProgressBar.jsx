@@ -31,6 +31,8 @@ const ProgressBar = ({
       className='progress-bar-range'
         type="range"
         ref={progressBarRef}
+        name='progreso-de-la-cancion'
+        aria-label='progreso de la canción'
         defaultValue="0"
         onChange={handleProgressChange}
       />

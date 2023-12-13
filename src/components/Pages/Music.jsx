@@ -6,8 +6,10 @@ import PageHeader from "../PageHeader/PageHeader";
 import "./Music.css";
 
 import CardWithArrow from "components/Cards/CardWithArrow/CardWithArrow";
+import useDocumentTitle from "../Hooks/custom-hooks";
 
 const Music = () => {
+    useDocumentTitle('Música - Sebastián Mármol');
     return (
         <article className="music-article">
 

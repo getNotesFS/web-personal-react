@@ -27,7 +27,7 @@ export default function HobbiesSection() {
                     title="Videojuegos"
                 />
                 <div className='external-arrow'>
-                <ButtonWithArrow page_url="/hobbies" description="Ver todos los hobbies" className="center" imgsrc="./hobbies.jpg" hasBorderRadius />
+                <ButtonWithArrow page_url="/hobbies" description="Ver todos los hobbies" className="center" imgsrc="./hobbies.jpg" alt_img="Collage de los hobbies en horizontal"  hasBorderRadius />
                 </div>
 
             </div>

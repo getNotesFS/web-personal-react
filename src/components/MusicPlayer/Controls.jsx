@@ -89,25 +89,25 @@ const Controls = ({
     <>
       <div className="controls-wrapper">
         <div className="playback-controls">
-          <button onClick={handlePrevious}>
+          <button onClick={handlePrevious} aria-label='anterior'>
             <IoPlaySkipBackSharp color="white" />
           </button>
-          <button className='skipBackward' onClick={skipBackward}>
+          <button className='skipBackward' onClick={skipBackward} aria-label='volver 5 segundos atrás'>
             <IoPlayBackSharp color="white" />
           </button>
-          <button onClick={togglePlayPause} className="play-pause-btn">
+          <button onClick={togglePlayPause} className="play-pause-btn" aria-label='pausar o reproducir'>
             {isPlaying ? <IoPauseSharp color="inherit" /> : <IoPlaySharp color="inherit" />}
           </button>
-          <button className='skipForward' onClick={skipForward}>
+          <button className='skipForward' onClick={skipForward} aria-label='avanzar 5 segundos adelante'>
             <IoPlayForwardSharp color="white" />
           </button>
-          <button onClick={handleNext}>
+          <button onClick={handleNext} aria-label='siguiente'>
             <IoPlaySkipForwardSharp color="white" />
           </button>
 
         </div>
         <div className="volume-controls">
-          <button onClick={() => setMuteVolume((prev) => !prev)} className="volume-btn">
+          <button onClick={() => setMuteVolume((prev) => !prev)} className="volume-btn" aria-label='volumen'>
             {muteVolume || volume < 5 ? (
               <IoMdVolumeOff color="white" />
             ) : volume < 40 ? (
@@ -121,6 +121,8 @@ const Controls = ({
             <input
               type="range"
               className="volume-slider"
+              name="volumen"
+              aria-label='volumen de la canción'
               min={0}
               max={100}
               value={volume}

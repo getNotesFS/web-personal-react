@@ -1,6 +1,6 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -20,6 +20,7 @@ import HobbiesPost from './components/Pages/HobbiesPost';
 import Search from './components/Search';
 
 import database from './data/search-data';
+
 
 // Otros imports de componentes...
 const ScrollToTop = () => {
@@ -129,22 +130,23 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <Router>
      <ScrollToTop />
       <Header setSearchVisible={setSearchVisible} />
       <div>
         {searchVisible && <Search data={database.hobbies} setSearchVisible={setSearchVisible} />}
       </div>
       <main>
+ 
+
         <Routes>
          
-          <Route path="/" element={
-            <Home />
-          } />
+        <Route path="/" index element={<Home />} />
           <Route path="/musica" element={<Music />} />
           <Route path="/hobbies" element={<Hobbies />} />
           <Route path="/peliculas" element={<Movie />} />
           <Route path="/sobre-mi" element={<AboutMe />} />
+
           <Route path="/hobbies/fotografia" element={
 
 
@@ -185,12 +187,11 @@ function App() {
             previousLink={dataVideojuegos.previousLink}
           />} />
 
-
-
+ 
         </Routes>
       </main>
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 }
 

@@ -6,8 +6,9 @@ import PageHeader from "../PageHeader/PageHeader";
 import "./Movie.css";
 import CardWithVideo from "../Cards/CardWithVideo/CardWithVideo";
 
-
+import useDocumentTitle from "../Hooks/custom-hooks";
 const Music = () => {
+    useDocumentTitle('Películas - Sebastián Mármol');
     return (
         <article className="movie-article">
 

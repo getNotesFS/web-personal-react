@@ -140,6 +140,8 @@ const Search = ({ data, setSearchVisible }) => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Buscar..."
+                name="buscador"
+                aria-label='Buscar en el sitio web'
             />
             <ul className='search-results'>
                 {results.map((item, index) => (

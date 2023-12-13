@@ -9,7 +9,10 @@ import "./Hobbies.css";
 
 import CardWithArrow from "components/Cards/CardWithArrow/CardWithArrow";
 
+import useDocumentTitle from "../Hooks/custom-hooks";
+
 const Hobbies = () => {
+    useDocumentTitle('Mis hobbies - Sebastián Mármol');
     return (
         <article className="hobbies-article">
 

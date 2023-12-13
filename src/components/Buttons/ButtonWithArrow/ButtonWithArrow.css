@@ -46,3 +46,18 @@
 {
     border-radius: .3em;
 }
+
+.max-width-btn-large
+{
+    max-width: 300px;
+}
+
+.max-width-btn-small
+{
+    max-width: 150px;
+}
+
+.max-width-btn-medium
+{
+    max-width: 240px;
+}

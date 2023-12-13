@@ -4,7 +4,12 @@ import "./HobbiesPost.css";
 
 import PageHeaderInColumnsMix from "components/PageHeader/PageHeaderInColumnsMix";
 
+import useDocumentTitle from "components/Hooks/custom-hooks";
+
 export default function HobbiesPost({ galleryItems, nextLink, previousLink, title, content, img_url, arial_label, video_url_pg }) {
+    
+    useDocumentTitle(`${title} - Sebastián Mármol`);
+    
     return (
         <article className="hobbies-single-article">
             <PageHeaderInColumnsMix

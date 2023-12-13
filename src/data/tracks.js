@@ -14,19 +14,19 @@ import blinka from './music-player/imgs/blk182.jpeg';
 
 export  const tracks = [
   {
-    title: 'blink-182 - Adam-s Song',
+    title: `Adam's Song`,
     src: blinkas,
-    author: 'blink-182',
+    author: 'Blink-182',
     thumbnail: blinka,
 },
   {
-    title: 'Faint - Linkin Park',
+    title: 'Faint',
     src: faints,
     author: 'Linkin Park',
     thumbnail: faint,
   }, 
   {
-    title: 'In The End - Linkin Park',
+    title: 'In The End',
     src: intheends,
     author: 'Linkin Park',
     thumbnail: intheend,
@@ -34,9 +34,9 @@ export  const tracks = [
 
  
   {
-    title: 'Disfigure - Blank [NCS Release]',
+    title: 'Disfigure',
     src: disfigs,
-    author: 'NCS Release',
+    author: 'Blank [NCS Release]',
     thumbnail: disfigure,
 
   } 

@@ -11,6 +11,7 @@ const ButtonWithArrowExternal = ({ page_url,
   isExternal = false,
   hasBorder = false,
   hasBorderRadius = false,
+  alt_img,
   ...restProps }) => { 
   
   const linkClass = `link-button ${hasBorder ? 'with-border' : ''} ${className || ''} ${hasBorderRadius ? 'with-border-radius' : ''}`;

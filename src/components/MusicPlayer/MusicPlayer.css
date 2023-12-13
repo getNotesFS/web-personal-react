@@ -214,7 +214,7 @@
      color: white;
      border-radius: 10px;
     
-     max-height: 300px;
+     max-height: 180px;
      overflow-y: auto;
  }
 
@@ -253,12 +253,14 @@
  /* Estilos para el nombre de la canción y el artista */
  .track-details {
      display: flex;
+     flex-direction: column;
      justify-content: space-between;
      align-items: center;
      font-size: .8em;
      color: #ffffff;
      font-weight: 500;
      text-align: left;
+     align-items: flex-start; 
 
  }
 
@@ -273,8 +275,13 @@
  .track-artist {
      font-size: 0.9em;
      color: #aaa;
+     margin: 0em;
  }
 
+ .playlist ul{
+    padding-right: .3em;
+    padding-top: .5em;
+ }
  /* Puedes agregar más estilos según tus necesidades */
 
  .playlist::-webkit-scrollbar {

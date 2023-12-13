@@ -12,7 +12,7 @@ export default function MovieSection() {
             <div className='MovieCard'>
                 <article className='article-container'>
 
-                    <img src="./memento.jpg" alt="Memento" />
+                    <img src="./memento.jpg" alt="Póster de la película Memento" />
 
                     <hgroup>
                         <h3>Memento</h3>
@@ -33,7 +33,7 @@ export default function MovieSection() {
                     </hgroup>
 
                 </article>
-                <ButtonWithArrow page_url="/peliculas" description="Descubrir más películas" className="center" imgsrc="./movies.jpg" />
+                <ButtonWithArrow page_url="/peliculas" description="Descubrir más películas" className="center" imgsrc="./movies.jpg" alt_img="Collage verias películas en horizontal" />
             </div>
         </section>
 

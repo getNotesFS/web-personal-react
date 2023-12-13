@@ -13,6 +13,7 @@ const PlayList = ({ tracks, setTrackIndex, setCurrentTrack, trackIndex }) => {
     const [selectedTrackIndex, setSelectedTrackIndex] = useState(0);
 
     
+    console.log("tracks: ", tracks);
 
     useEffect(() => {
         setTrackIndex(selectedTrackIndex);
@@ -33,7 +34,7 @@ const PlayList = ({ tracks, setTrackIndex, setCurrentTrack, trackIndex }) => {
             >
                 <div className="track-details">
                     <h3 className="track-title">{track.title}</h3>
-                    <h4 className="track-artist">{track.artist}</h4>
+                    <h4 className="track-artist">{track.author}</h4>
                 </div>
             </li>
             ))}

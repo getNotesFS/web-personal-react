@@ -25,7 +25,7 @@ const DisplayTrack = ({
       <div className="audio-info">
         <div className="audio-image">
           {currentTrack.thumbnail ? (
-            <img src={currentTrack.thumbnail} alt="audio avatar" />
+            <img src={currentTrack.thumbnail} alt="carátula de la canción" />
           ) : (
             <div className="icon-wrapper">
               <span className="audio-icon">
