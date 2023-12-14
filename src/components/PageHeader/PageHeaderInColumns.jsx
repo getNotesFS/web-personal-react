@@ -1,4 +1,4 @@
-import React from 'react';
+ 
 
 import './PageHeaderInColumns.css';
 
@@ -17,7 +17,7 @@ export default function PageHeaderInColumns(props) {
             <div className='page-g'>
                 <hgroup>
                     <h1>{title}</h1>
-                    <p>{content}</p>
+                    <div>{content}</div>
                 </hgroup>
                 <figure aria-label={arial_label}>
                     <img src={img_url} alt={arial_label} />

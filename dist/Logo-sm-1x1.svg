@@ -1,6 +1,6 @@
 <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Logo sm -1x1">
-<g id="sm-container" class="hover-effect">
+<g id="sm-container" className="hover-effect">
 <g id="sm-bg">
 <rect id="bg3" x="30.7894" y="16" width="457.211" height="457.211" rx="10" fill="#010101"/>
 <rect id="bg2" x="22.4385" y="22.2632" width="457.211" height="457.211" rx="10" fill="#0C0B0B"/>

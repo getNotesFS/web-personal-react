@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import { Link } from "react-router-dom";
 import "./HobbiesPost.css";
 
@@ -26,7 +26,7 @@ export default function HobbiesPost({ galleryItems, nextLink, previousLink, titl
                     {galleryItems.map((item, index) => (
                         item.video_url ? (
 
-                            <Link to={item.video_url} target="_blank">
+                            <Link to={item.video_url} target="_blank" key={index}>
                                 <figure key={index}>
                                     <img src={item.imageUrl} alt={item.caption} />
                                     <figcaption>{item.caption}
